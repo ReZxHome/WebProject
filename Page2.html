@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Preferences</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            position: relative; /* Allows overlaying content over the background */
+        }
+
+        /* Background image container */
+        .background {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.hoteliermiddleeast.com/cloud/2021/08/02/TwkYUtjq-saudi-arabia-travel-1200x750.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Blurring the background */
+            z-index: -1; /* Ensure it's behind content */
+        }
+
+        /* Overlay for darkening the background */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: -1;
+        }
+
+        header {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            color: white; /* Text color over the dark overlay */
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            color: black; /* Ensure form text remains visible */
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1d5a3e;
+        }
+
+        h2 {
+            color: #2E8B57;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #2E8B57;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #1d5a3e;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #16442a;
+            color: white;
+            text-align: center;
+            padding: 0% 0;
+            position: fixed;
+            width: 100%;
+            height: 5%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Background image and overlay -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Your Travel Preferences</h1>
+    </header>
+
+    <main>
+        <form>
+            <p>Have you ever visited Saudi Arabia?</p>
+            <input type="radio" name="visited" value="Yes"> Yes<br>
+            <input type="radio" name="visited" value="No" checked> No<br>
+
+            <p>Which cities do you want to visit? (Select all that apply)</p>
+            <input type="checkbox" name="cities" value="Riyadh"> Riyadh<br>
+            <input type="checkbox" name="cities" value="Jeddah"> Jeddah<br>
+            <input type="checkbox" name="cities" value="Dammam"> Dammam<br>
+            <input type="checkbox" name="cities" value="Al-Ula"> Al-Ula<br>
+
+            <p>What activities interest you in Saudi Arabia? (Select all that apply)</p>
+            <input type="checkbox" name="activities" value="Desert Safari"> Desert Safari<br>
+            <input type="checkbox" name="activities" value="Shopping in Souks"> Shopping in Souks<br>
+            <input type="checkbox" name="activities" value="Cultural Tours"> Cultural Tours<br>
+            <input type="checkbox" name="activities" value="Culinary Experiences"> Culinary Experiences<br>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Explore More</h2>
+        <ul>
+            <li><a href="HomePage.html">Welcome Page</a></li>
+            <li><a href="Page1.html">Historical Places</a></li>
+            <li><a href="Page3.html">Conclusion</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Group 1 of imamu All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

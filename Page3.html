@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusion</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            position: relative; /* Allows elements to position over background */
+        }
+
+        /* Background image container */
+        .background {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://jcsa.sa/globalassets/jcsa/images/visit-saudi/riyadh-kingdom-tower-areial_web.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Blurring the background */
+            z-index: -1; /* Ensure it's behind content */
+        }
+
+        /* Overlay for darkening the background */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: -1;
+        }
+
+        header {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2E8B57;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #2E8B57;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li:hover {
+            background-color: #26332c;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #1f5c39;
+            color: white;
+            text-align: center;
+            padding: 0% 0;
+            position: fixed;
+            width: 100%;
+            height: 5%;
+            bottom: 0;
+        }
+
+        video {
+            max-width: 100%; /* Responsive video */
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Background image and overlay -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Conclusion</h1>
+    </header>
+
+    <main>
+        <p>Saudi Arabia offers a unique blend of tradition and modernity, making it a fascinating destination for travelers. We hope this guide inspires you to explore its wonders!</p>
+        <p>From historical sites to vibrant cities, there's something for everyone. Don't forget to immerse yourself in the local culture and cuisine for a truly unforgettable experience.</p>
+
+        <h2>Video From Visit Saudi</h2>
+        <video autoplay loop muted>
+            <source src="https://scth.scene7.com/is/content/scth/winter-2024" type="video/mp4"> <!-- Replace with your video URL -->
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Explore More</h2>
+        <ul>
+            <li><a href="HomePage.html">Welcome Page</a></li>
+            <li><a href="Page1.html">Historical Places</a></li>
+            <li><a href="Page2.html">Your Travel Preferences</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Group 1 of imamu All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

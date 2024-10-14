@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Saudi Arabia</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonts of the page*/
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        /* Container for the background image */
+        .background {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-image: url('https://www.saudiembassy.net/sites/default/files/u67/Saudiv4.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px); /* Blurring the background image */
+        }
+
+        /* Overlay for making the background darker */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* A dark overlay to ensure text is readable */
+            z-index: -1;
+        }
+
+        header {
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: white; /* Changed to white */
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #2E8B57;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow around each item */
+        }
+
+        ul li:hover {
+            background-color: #3e574a;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+        }
+
+        ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            background-color: #16442a;
+            color: white;
+            text-align: center;
+            padding: 0x 0;
+            position: fixed;
+            width: 100%;
+            height: 5%;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Background image container -->
+    <div class="background"></div>
+    <div class="overlay"></div>
+
+    <header>
+        <h1>Welcome to Saudi Arabia!</h1>
+    </header>
+
+    <main>
+        <p>Discover the beauty, culture, and history of Saudi Arabia. From stunning landscapes to rich traditions, there’s so much to explore.</p>
+
+        <h2>Explore More</h2>
+        <ul>
+            <li><a href="Page1.html">Historical Places</a></li>
+            <li><a href="Page2.html">Your Travel Preferences</a></li>
+            <li><a href="Page3.html">Conclusion</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Group 1 of imamu All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
